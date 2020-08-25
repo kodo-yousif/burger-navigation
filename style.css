@@ -1,0 +1,65 @@
+h1 {
+  background-color: aqua;
+}
+
+.sh {
+  text-shadow: 1px 1px 3px rgb(184, 184, 184);
+}
+.active {
+  text-shadow: 2px 2px 3px rgb(82, 80, 80);
+}
+
+.nosh {
+  text-shadow: none;
+}
+
+.nav {
+  height: 55px;
+  transition: top 0.2s ease-in-out;
+}
+
+.mobile {
+  position: fixed;
+  height: auto;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: none;
+  transition: top 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 995px) {
+  .nav {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    top: -50px;
+  }
+}
+
+.kodo,
+.classynav {
+  position: fixed;
+}
+
+.kodo {
+  right: 15%;
+  height: 50px;
+  margin-top: 50px;
+  width: 120px;
+  overflow: hidden;
+}
+.classynav {
+  background-image: url(bookmark.png);
+  background-size: cover;
+  background-position: center;
+  left: 10%;
+  width: 110px;
+  height: 150px;
+}
+
+.nav-up {
+  position: fixed;
+  top: -100px;
+}
